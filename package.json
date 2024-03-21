@@ -1,0 +1,21 @@
+{
+  "name": "desafio_guiado_16_servidores_welcome_world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node app3.js || echo 'Error: No se puede iniciar el servidor con node, asegúrate de que app3.js existe.'",
+    "server-watch": "node --watch app3.js || echo 'Error: No se puede iniciar el servidor con watch node, asegúrate de que app3.js existe.'",
+    "server-nodemon": "nodemon app3.js || echo 'Error: No se puede iniciar el servidor con nodemon, asegúrate de que app3.js existe.'",
+    "start": "nodemon --watch app3.js || echo 'Error: No se puede iniciar el servidor con watch nodemon, asegúrate de que app3.js existe.'"
+  },
+  "keywords": [],
+  "author": "jonathan viera",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

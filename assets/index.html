@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío Welcome World Spa</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+<body>
+
+<div class="row w-75 m-auto">
+  <!-- Crear -->
+  <div class="col-12 col-sm-3 container p-5">
+    <h3>Crear un archivo</h3>
+    <form action="/crear-archivo" method="GET">
+      <div class="form-group">
+        Nombre del archivo9
+        <input name="nombre" class="form-control" id="archivo" required />
+      </div>
+      <div class="form-group">
+        Contenido
+        <textarea name="contenido" class="form-control" id="contenido" cols="30" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Crear archivo</button>
+    </form>
+  </div>
+  <!-- Leer -->
+  <div class="col-12 col-sm-3 container p-5">
+    <h3>Leer un archivo</h3>
+    <form action="/leer-archivo" method="GET">
+      <div class="form-group">
+        Nombre del archivo
+        <input name="nombre" class="form-control" id="archivo" required />
+      </div>
+      <button type="submit" class="btn btn-info">Consultar archivo</button>
+    </form>
+  </div>
+  <!-- Renombrar -->
+  <div class="col-12 col-sm-3 container p-5">
+    <h3>Renombrar un archivo</h3>
+    <form action="/renombrar-archivo" method="GET">
+      <div class="form-group">
+        Nombre del archivo
+        <input name="nombre" class="form-control" id="nombreArchivo" required />
+      </div>
+      <div class="form-group">
+        Nuevo nombre del archivo
+        <input name="nuevoNombre" class="form-control" id="nuevoNombreArchivo" required />
+      </div>
+      <button type="submit" class="btn btn-warning">Renombrar archivo</button>
+    </form>
+  </div>
+  <!-- Eliminar -->
+  <div class="col-12 col-sm-3 container p-5">
+    <h3>Eliminar un archivo</h3>
+    <form action="/eliminar-archivo" method="GET">
+      <div class="form-group">
+        Nombre del archivo
+        <input name="nombre" class="form-control" id="nombreArchivoEliminar" required />
+      </div>
+      <button type="submit" class="btn btn-danger">Eliminar archivo</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
